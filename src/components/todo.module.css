@@ -1,0 +1,51 @@
+.todo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1%;
+    margin: 1% 1%;
+    border: 1px solid #1f56cc;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    background-color: #81848b;
+}
+
+.todo.completed {
+    background-color: #5a5a5c;
+}
+
+.todo p {
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.todo p.completed {
+    text-decoration: line-through;
+    color: wheat;
+}
+
+.todo .actions {
+    display: flex;
+    align-items: center;
+}
+
+.todo .actions .dueDate {
+    font-size: 0.9em;
+    color: wheat;
+    margin-right: 10px;
+}
+
+.todo button {
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    background-color: #1f56cc;
+    color: white;
+    cursor: pointer;
+}
+
+.todo button:hover {
+    background-color: #10457e;
+}
